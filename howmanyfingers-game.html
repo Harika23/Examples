@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>How many fingers Game</title>
+    </head>
+    <body>
+        <p>How many fingers am i holding up???</p>
+         <input type="text" id="textinput">
+        <button id="buttontext">Enter</button>
+        
+        <script type="text/javascript">
+            document.getElementById("buttontext").onclick=function(){
+                
+                var enteredtext=document.getElementById("textinput").value;
+                var systemdigit=Math.floor(Math.random() * 5) + 1;
+                if(enteredtext == systemdigit){
+                    alert("You guessed it right!");
+                }
+                else{
+                    alert('You guessed it wrong... It was ' + systemdigit + ' Try again');
+                }
+            }
+            
+        </script>
+    </body>
+</html>
